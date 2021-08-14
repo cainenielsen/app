@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "hubstruct-helpcenter",
+  "private_key_id": "cea3b8ce83b59a4641a1944d9c8600acafd1a8ad",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDaM7Fj6s6m+NfE\nANfPphOjOUaOJbMF1lsTsBhQCkKsdMW6e+5HNzjd+P7FGbW4E9CBjukFrIaB45jD\n+B1oHiO7gvrT9ATOsPNnYUUhdiEuOMjqhtNgPiqDFc+XajJWTD618+yqEAyrUq2R\nf3JFAsfMDDzPmwRiE9YYXMSK95l6fxJJB0aSGeYllU9FuOOkr/HWeKdO2ZJUURAS\nFLHFh+T/4qnBZKHysmpPtY/jw0VgOMMiA1grJ6z8PfnkWTOTZr1NcKnXp9wZegZx\nGNgADKN0t8TJ59iaBfksDJP965Z0tqhwm29h8MKUsmpGs16vGHtjgBWBBMtppT3s\n5TbsX4wTAgMBAAECggEADTVPpoPQq/fO0jNw3N92bqapa2WQNcK/gAYXuqsCu5i7\nKiou7TDd26xWYIAvz7g9vCuP76l9YBoMWPri1AO7Cv86bexMz2XG6u01USy3uBB0\n5qMJr/I9AllZvkmN4xgGopH+gF7fVw5dD++K71V9p0LexxX6bz6fJgAuxfC6yCWr\nZY6CmF8I0kfyjzCk1OLAt5Dtkxv2kMtpORRkr21GIpJ+6ryQaizUNbNupFlr45of\nmaQMV5IyrTnmHI7LZVS4jl919UyIN+E7Coh6Cb7M2hLGsgL0I69EtI56t6cmCnyv\ngcv0o/mpQtf+v7G9Dww4heekIWW7O9UAUq7OYKxIBQKBgQDvwKnQt2T4noNKWaus\nUQqOsjxeFKtYcpnb6PuJub9iIO6rs31tFe24yHF5N+SbXqAQfZ/+KQNJcDw7V0xh\nJZqvyq3RDsiQvf1xUNqNLkmWMlhMUPcAsliTFa/kLKPORMtyWtoCQLHRxwseFj/T\n0AZRLDy3LjPyyCDyAlScsHLMpQKBgQDo/SirvRxsOfBTOk0qKsD/8ziyDHOeHrzI\n1wvdh/MUArHXtUIqboIckfFvTjmfyhyzqf4hNq416MCDox6E8fYiVdPHFiKzvDB1\n7yJfJSi1ERhuQgw6GVb3iBk4t6nz+be6oDi9w/kVb+fx7J+12YkY1GKNy9on72WO\nlynVVSwAVwKBgQClCTGcG/IkdjEYKBvVlT+4NJb7iCzeyJyC1aD5EGTerp68kOSh\nB7xJO6lo8QGrtfpm/6L3uNGrZtf/XTuVj+YoZlM6GnwTrsTckPSwxJEhE+zWM9Gj\nqCDytrYKUnQ70/1b7ZAuhswhBGvxvQ0YyBThIZt12RcnY33SOap25btQhQKBgCsk\nDS7Xonart8NBbV5cckYyXBIj2hiyKlSp9Ql9DdZrtVBywKCou7DcmS759hOPUgc2\nd9bgkBttUJBPWOxW/TNYXxFjGOPc+cAsmlmxwLreQn7P/gGYBZFqAvmMkIybdZi5\n6CfDLND6WqFiJiR+9jLByMnmsCtq2Ywwk09sKOybAoGBAK4Q07WwpZmr98XT5YiV\nI6mLUkkv66ASBIfoHWIArbydZe0ZCvtgGpncw4FTikfkXhBxyuBXcb/PeT6jdN45\ns8sHILjDSnmWPw/lmEgu67iUmd6lLboInZTC+Gy916AlDt5d+pDDJYsoHyJqmWEw\nvr0S4YsugIyM41YjugBKVFkt\n-----END PRIVATE KEY-----\n",
+  "client_email": "service-controller@hubstruct-helpcenter.iam.gserviceaccount.com",
+  "client_id": "113688653400720584593",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/service-controller%40hubstruct-helpcenter.iam.gserviceaccount.com"
+}

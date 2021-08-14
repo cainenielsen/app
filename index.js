@@ -9,7 +9,9 @@ const parent = "hubstruct-helpcenter";
 
 const endpoint = `https://${region}-run.googleapis.com`;
 
-const domainMappings = `apis/domains.cloudrun.com/v1/${parent}/domainmappings`;
+const domainMappings = `apis/domains.cloudrun.com/v1/namespaces/${parent}/domainmappings`;
+
+const domainMappingsTest = `apis/domains.cloudrun.com/v1/${parent}/domainmappings`;
 
 const requestURL = `${endpoint}/${domainMappings}?key=${gcp_api_key}`;
 
@@ -30,9 +32,10 @@ function requestData() {
     if (err) {
       return console.log(err);
     }
+    console.log("test");
     console.log("response: ", res);
     console.log("body: ", body);
-    return res;
+    return body;
   });
 }
 
@@ -43,8 +46,17 @@ app.get("/", (req, res) => {
 
 app.get("/data", async (req, res) => {
   const data = await requestData();
-//   res.send(returnBoiler(data));
-  res.send(data);
+  //   res.send(returnBoiler(data));
+
+  request(requestURL, { json: true }, (err, response, body) => {
+    if (err) {
+      return console.log(err);
+    }
+    console.log("test");
+    console.log("response: ", response);
+    console.log("body: ", body);
+    res.send(body);
+  });
 });
 
 const port = process.env.PORT || 8080;
