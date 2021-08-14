@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  const name = process.env.NAME || 'World';
+  const name = process.env.GOOGLE_APPLICATION_CREDENTIALS || 'World';
   res.send(`Goodbye to a ${name}!`);
 });
 
