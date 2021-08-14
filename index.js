@@ -32,7 +32,8 @@ function requestData() {
     }
     console.log("response: ", res);
     console.log("body: ", body);
-    return body;
+    let json = JSON.parse(body);
+    return json;
   });
 }
 
