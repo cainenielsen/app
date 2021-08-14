@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express();
+console.log(process.env.GOOGLE_APPLICATION_CREDENTIALS);
 
 app.get('/', (req, res) => {
-  const name = process.env.GOOGLE_APPLICATION_CREDENTIALS || 'World';
+  const name = process.env.NAME || 'World';
   res.send(`Goodbye to a ${name}!`);
 });
 
