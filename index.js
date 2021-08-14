@@ -4,14 +4,14 @@ const app = express();
 const request = require("request");
 
 const gcp_api_key = "AIzaSyC1Wn4U65M_23wGOp1xAhNnlJoq_2WL6kg";
-const endpoint = "us-central1";
+const region = "us-central1";
 const parent = "hubstruct-helpcenter";
 
-const baseURL = `https://${endpoint}-run.googleapis.com`;
+const endpoint = `https://${region}-run.googleapis.com`;
 
-const domainMappings = `https://${endpoint}/apis/domains.cloudrun.com/v1/${parent}/domainmappings`;
+const domainMappings = `apis/domains.cloudrun.com/v1/${parent}/domainmappings`;
 
-const requestURL = `${domainMappings}?key=${gcp_api_key}`;
+const requestURL = `${endpoint}/${domainMappings}?key=${gcp_api_key}`;
 
 function requestData() {
   return request(requestURL, { json: true }, (err, res, body) => {
