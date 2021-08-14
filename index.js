@@ -32,7 +32,7 @@ function requestData() {
     }
     console.log("response: ", res);
     console.log("body: ", body);
-    return returnBoiler(body);
+    return body;
   });
 }
 
@@ -43,7 +43,7 @@ app.get("/", (req, res) => {
 
 app.get("/data", async (req, res) => {
   const data = await requestData();
-  res.send(data);
+  res.send(returnBoiler(data));
 });
 
 const port = process.env.PORT || 8080;
