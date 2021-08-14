@@ -13,15 +13,25 @@ const domainMappings = `apis/domains.cloudrun.com/v1/${parent}/domainmappings`;
 
 const requestURL = `${endpoint}/${domainMappings}?key=${gcp_api_key}`;
 
+function returnBoiler(data) {
+  return `
+     <!DOCTYPE html>
+    <html>
+    <body>
+    ${data}
+    </body>
+    </html>
+`;
+}
+
 function requestData() {
   return request(requestURL, { json: true }, (err, res, body) => {
     if (err) {
       return console.log(err);
     }
-    console.log(body.url);
-    console.log(body.explanation);
-    console.log(res);
-    return res;
+    console.log("response: ", res);
+    console.log("body: ", body);
+    return returnBoiler(body);
   });
 }
 
@@ -31,9 +41,9 @@ app.get("/", (req, res) => {
 });
 
 app.get("/data", async (req, res) => {
-    const data = await requestData();
-    res.send(data);
-  });
+  const data = await requestData();
+  res.send(data);
+});
 
 const port = process.env.PORT || 8080;
 app.listen(port, () => {
