@@ -20,7 +20,8 @@ function requestData() {
     }
     console.log(body.url);
     console.log(body.explanation);
-    return body;
+    console.log(res);
+    return res;
   });
 }
 
