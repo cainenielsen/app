@@ -1,0 +1,23 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "build": "gcloud builds submit --tag gcr.io/hubstruct-helpcenter/app",
+    "deploy": "gcloud run deploy --image gcr.io/hubstruct-helpcenter/app",
+    "update": "npm run build & npm run deploy",
+    "gcloud update": "gcloud components update"
+  },
+  "engines": {
+    "node": ">= 12.0.0"
+  },
+  "author": "HubStruct",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
