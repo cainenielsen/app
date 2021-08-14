@@ -18,6 +18,7 @@ function returnBoiler(data) {
      <!DOCTYPE html>
     <html>
     <body>
+    test
     ${data}
     </body>
     </html>
