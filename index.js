@@ -32,7 +32,7 @@ function requestData() {
     }
     console.log("response: ", res);
     console.log("body: ", body);
-    return body;
+    return res;
   });
 }
 
